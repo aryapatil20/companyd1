@@ -6,9 +6,10 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 1520px;
+  width: 1529px;
   height: 80px;
-  margin-bottom: 655px;  
+  margin-top: -370px;
+  /* margin-bottom: 655px;   */
 }
 
 /* Logo text */

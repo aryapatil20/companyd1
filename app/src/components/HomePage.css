@@ -1,0 +1,30 @@
+/* Center the button below the navbar */
+.button-container {
+  display: flex;
+  justify-content: center; /* Center the button horizontally */
+  margin-top: 0; /* Remove any extra margin */
+  padding: 10px 0; /* Add some padding for spacing */
+}
+
+/* Style the button */
+.redirect-button {
+  padding: 10px 20px;
+  background-color: #1d4ed8; /* Blue background */
+  color: white; /* White text */
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect */
+.redirect-button:hover {
+  background-color: #2563eb; /* Lighter blue on hover */
+}
+
+/* Focus effect */
+.redirect-button:focus {
+  outline: 2px solid #93c5fd; /* Light blue outline */
+  outline-offset: 2px;
+}
