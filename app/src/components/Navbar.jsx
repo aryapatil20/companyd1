@@ -1,21 +1,20 @@
 import React from 'react';
-import { FaHome, FaSearch, FaBell, FaUserCircle, FaRocket } from 'react-icons/fa';
+import { FaHome, FaSearch, FaBell, FaUserCircle, FaEdit } from 'react-icons/fa';
+import './Navbar.css';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   return (
-    <nav className="bg-white shadow-md px-6 py-3 flex justify-between items-center">
-      {/* Logo/Icon */}
-      <div className="flex items-center gap-2 text-xl font-bold text-blue-600">
-        <FaRocket />
-        <span>MyApp</span>
-      </div>
-
-      {/* Icon Menu */}
-      <div className="flex items-center gap-6 text-gray-600 text-xl">
-        <FaHome className="hover:text-blue-500 cursor-pointer" title="Home" />
-        <FaSearch className="hover:text-blue-500 cursor-pointer" title="Search" />
-        <FaBell className="hover:text-blue-500 cursor-pointer" title="Notifications" />
-        <FaUserCircle className="hover:text-blue-500 cursor-pointer" title="Profile" />
+    <nav className="navbar">
+      <div className="logo">MyApp</div>
+      <div className="icon-menu">
+        <FaHome title="Home" />
+        <FaSearch title="Search" />
+        <FaBell title="Notifications" />
+        <FaUserCircle title="Profile" />
+        <Link to="/form" className="icon-link" title="Open Form">
+          <FaEdit />
+        </Link>
       </div>
     </nav>
   );
